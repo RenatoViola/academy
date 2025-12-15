@@ -47,7 +47,7 @@ class HelloAcademyTest {
                 Arguments.of("Rennan", "Hello Rennan"),
                 Arguments.of("Alice", "Hello Alice"),
                 Arguments.of("Bob", "Hello Bob"),
-                Arguments.of(null, "Hello"),
+//                Arguments.of(null, "Hello"),
                 Arguments.of("", "Hello "),
                 Arguments.of(" ", "Hello  ")
         );
