@@ -4,7 +4,5 @@ description: maven_build
 runs:
   using: composite
   steps:
-    - run: |
-        echo "Update me with the necessary commands"
-        mvn -B package --file pom.xml
+    - run: mvn -B package --file pom.xml
       shell: bash
