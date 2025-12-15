@@ -1,0 +1,10 @@
+name: maven_build
+author: ctw04651
+description: maven_build
+runs:
+  using: composite
+  steps:
+    - run: |
+        echo "Update me with the necessary commands"
+        mvn -B package --file pom.xml
+      shell: bash
