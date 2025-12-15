@@ -13,5 +13,5 @@ runs:
   steps:
     - run: |
         docker image tag ${{ inputs.docker_username }}/${{ inputs.docker_image_reference }}:named_tag ${{ inputs.docker_image_reference }}:second_tag
-        docker push ${{ inputs.docker_username }}/${{ inputs.docker_image_reference }}
+        docker push ${{ inputs.docker_username }}/${{ inputs.docker_image_reference }}:named_tag
       shell: bash
