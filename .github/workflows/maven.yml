@@ -23,7 +23,7 @@ jobs:
       uses: ./.github/actions/docker_build
       with:
         path_dockerfile: 'src/main/docker/Dockerfile.jvm'
-        image_name: 'renato42500/named_academy'
+        image_name: '${{ vars.DOCKERHUB_USERNAME }}/named_academy'
         tag_name: 'named_tag'
     - name: List Docker images
       run: docker image ls
